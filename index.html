@@ -7,31 +7,53 @@
     <title>ccm singer studio</title>
     
     <link rel="stylesheet" href="./css/mein.css">
+
 </head>
 
 <body>
     <!-- 헤더 -->
      <div id="slider">
+        <header>
+            <div id="header">
+                <img src="./Img/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>DISCO</li>
+                    <li>INFLUENCER</li>
+                    <li>SONG</li>
+                    <li>TICKETING</li>
+                    <li><h4>LOGIN</h4></li>
+                </ul>
+            </nav>
+        </header>
 
-    <header>
-        <div id="header">
-            <img src="./Img/logo.png" alt="">
-        </div>
-        <nav>
-            <ul>
-                <li>HOME</li>
-                <li>DISCO</li>
-                <li>INFLUENCER</li>
-                <li>SONG</li>
-                <li>TICKETING</li>
-                <li><span>LOGIN</span></li>
-            </ul>
-        </nav>
-    </header>
-    
+</div>
+<div id="slidewrap">
+    <ul class="slide">
+        <li><img src="/ccm_singer_studio/Img/mainimg.PNG" alt=""></li>
+        <li><img src="/ccm_singer_studio/Img/mainimg2.PNG" alt=""></li>
+        <li><img src="/ccm_singer_studio/Img/mainimg3.PNG" alt=""></li>
+    </ul>
+    <p>ccm singer studio</p>
+    <span class="prev">&lt;</span>
+    <span class="next">&gt;</span>
+</div>
+<script>
+    $('.prev').click(function(){
+        $('.slide li:last').prependTo('.slide');
+        $('.slide').css('margin-left',-100%);
+        $('.slide').stop().animate({marginLeft:0},800);
+    });
 
-    </div>
-
+    $('.next').click(function(){
+        $('.slide').stop().animate({marginLeft:-100%},800,function(){
+            $('.slide li:first').appendTo('.slide');
+            $('.slide').css({marginLeft:0});
+        });
+    });
+</script>
 
     <!-- 디스코버 -->
     <div id="disco">
@@ -49,8 +71,8 @@
 
      </div>
      
-    <!-- 티켓팅 -->
-     <div id="ticketing">
+    <!-- 사이트 -->
+     <div id="sit">
 
      </div>
 
