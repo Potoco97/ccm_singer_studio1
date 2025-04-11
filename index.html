@@ -7,6 +7,7 @@
     <title>ccm singer studio</title>
     
     <link rel="stylesheet" href="./css/mein.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
 
 </head>
 
@@ -30,25 +31,28 @@
         </header>
 
 </div>
+<!-- 슬라이스 -->
 <div id="slidewrap">
     <ul class="slide">
         <li><img src="/ccm_singer_studio/Img/mainimg.PNG" alt=""></li>
         <li><img src="/ccm_singer_studio/Img/mainimg2.PNG" alt=""></li>
         <li><img src="/ccm_singer_studio/Img/mainimg3.PNG" alt=""></li>
     </ul>
+    <div class="slide">
     <p>ccm singer studio</p>
     <span class="prev">&lt;</span>
     <span class="next">&gt;</span>
 </div>
+</div>
 <script>
     $('.prev').click(function(){
         $('.slide li:last').prependTo('.slide');
-        $('.slide').css('margin-left',-100%);
+        $('.slide').css('margin-left',100% );
         $('.slide').stop().animate({marginLeft:0},800);
     });
 
     $('.next').click(function(){
-        $('.slide').stop().animate({marginLeft:-100%},800,function(){
+        $('.slide').stop().animate({marginLeft:100%},800,function(){
             $('.slide li:first').appendTo('.slide');
             $('.slide').css({marginLeft:0});
         });
@@ -57,20 +61,48 @@
 
     <!-- 디스코버 -->
     <div id="disco">
-        
+        <div class="dis1">
+
+        </div>
+
+        <div class="dis2">
+
+        </div>
+
+        <div class="dis3">
+
+        </div>
+
+        <div class="dis4">
+
+        </div>
+
+        <div class="dis5">
+
+        </div>
+
+        <div class="dis6">
+
+        </div>
     </div>
 
     <!-- 인플루언서 -->
      <div id="ai">
+        <div class="ai">
+            <h2>싱어 스튜디오</h2>
+            <h1>CCM SINGER STUDIO</h1>
+            <ul>
+                <li><div class="ai"></div>
+                <img src="/ccm_singer_studio/Img/ai_ysgdd_img.PNG" alt="">
+                <img src="/ccm_singer_studio/Img/ai1_ccws_img.PNG" alt="">
+                <img src="/ccm_singer_studio/Img/ai1_brgipt_img.PNG" alt="">
+                <img src="/ccm_singer_studio/Img/ai_gir_img.PNG" alt=""></li>
+            </ul>
 
+        
     
      </div>
 
-    <!-- 영상 -->
-     <div id="youtube">
-
-     </div>
-     
     <!-- 사이트 -->
      <div id="sit">
 
