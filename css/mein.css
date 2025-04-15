@@ -44,26 +44,15 @@ span:hover {background: rgba(255,255,255,0.8);color: #000;}
 
 /* 디스코버 */
 #disco{width: 100%; height: 800px; display: contents; display: block;}
-.dis1{width: 50%; height: 400px;float: left; background:url(/ccm_singer_studio/Img/disco_1.png)}
-.dis1:hover {cursor:pointer;}
-.btn5{
-     border:none;
-   }
-   .btn5::before {content: '';position: absolute;left: 0px;bottom:0px;
-     z-index:-1;
-     width: 100%;
-     height:100%;
-     background: transparent;
-     box-shadow: inset 0px 0px 0px #6098FF;
-     display: block;
-     -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
-     transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
-   }
-   .btn5:hover::before {
-    box-shadow: inset 300px 300px 300px #6098FF;
-   }
+.dis1{width: 50%; height: 400px;float: left; background:url(/Img/disco_1.png);}
+.dis1:hover {cursor:pointer;float: left; color: #fff;}
+.dis1 h1 {font-size: 30px; font-weight: 900;float: left;margin-top: 120px;margin-left: 50px ;color: #fff;transition: 0.5s;}
+.dis1 p:hover{font-size: 20x;}
+.dis1 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis1 h1:hover{background:rgba(0,0,0,0.3);}
 
-.dis2{width: 25%; height: 400px;float: left; background-color: rgb(255, 59, 59);}
+
+.dis2{width: 25%; height: 400px;background: left; background-color: rgb(255, 59, 59);}
 .dis3{width: 25%; height: 400px;float: left; background-color: rgb(60, 255, 0);}
 .dis4{width: 50%; height: 400px;float: left; background-color: rgb(255, 193, 59);}
 .dis5{width: 25%; height: 400px;float: left; background-color: rgb(59, 232, 255);}
