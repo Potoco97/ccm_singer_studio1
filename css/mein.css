@@ -45,18 +45,56 @@ span:hover {background: rgba(255,255,255,0.8);color: #000;}
 /* 디스코버 */
 #disco{width: 100%; height: 800px; display: contents; display: block;}
 .dis1{width: 50%; height: 400px;float: left; background:url(/Img/disco_1.png);}
-.dis1:hover {cursor:pointer;float: left; color: #fff;}
-.dis1 h1 {font-size: 30px; font-weight: 900;float: left;margin-top: 120px;margin-left: 50px ;color: #fff;transition: 0.5s;}
-.dis1 p:hover{font-size: 20x;}
+.dis1:hover {cursor:pointer;float: left;}
+.dis1 h1 {font-size: 30px; font-weight: 900;padding: 20px 0;margin-top: 80px;margin-left: 50px ;color: #fff;transition: 0.5s;}
 .dis1 p {margin-top: 20px; font-size: 17px;transition: 1s;}
 .dis1 h1:hover{background:rgba(0,0,0,0.3);}
+.dis1 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
 
-.dis2{width: 25%; height: 400px;background: left; background-color: rgb(255, 59, 59);}
-.dis3{width: 25%; height: 400px;float: left; background-color: rgb(60, 255, 0);}
-.dis4{width: 50%; height: 400px;float: left; background-color: rgb(255, 193, 59);}
-.dis5{width: 25%; height: 400px;float: left; background-color: rgb(59, 232, 255);}
-.dis6{width: 25%; height: 400px;float: left; background-color: rgb(255, 0, 200);}
+.dis2{width: 25%; height: 400px;float: left;background: repeating-linear-gradient(-45deg,#5c96b8,#77c2ee 1px,#64a4c9 0,#77c2ee 2px);}   
+.dis2:hover {cursor:pointer;}
+.dis2 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
+.dis2 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis2 h1:hover{background:rgba(0,0,0,0.3);}
+.dis2 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
+
+
+.dis3{width: 25%; height: 400px;float: left; background: url(/Img/disco_2.jpg)}
+.dis3:hover {cursor:pointer;}
+.dis3 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
+.dis3 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis3 h1:hover{background:rgba(0,0,0,0.3);}
+.dis3 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
+
+.dis4{width: 50%; height: 400px;float: left; background-color: rgb(255, 193, 59);float: left;}
+.news{width: 100%}
+.news>li{float: left;width: 33.3%;line-height: 40px;text-align: center;background-color: #64a4c9;}
+.news>li:hover{background-color: #5790b1;}
+.news>li:hover a{color: #ffffff;}
+.news>li>a{color: #fff;}
+.sub{background-color: #78bce4;display: none;}
+.sub>li:hover{background-color: #64c9a2;}
+    /* background: rgba(#fff,#fff,#fff,#fff,0.5);} */
+
+
+
+
+.dis5{width: 25%; height: 400px;float: left; background: url(/Img/disco_3.png)}
+.dis5:hover {cursor:pointer;}
+.dis5 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;
+            }
+.dis5 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis5 h1:hover{background:rgba(0,0,0,0.3);}
+.dis5 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
+
+
+.dis6{width: 25%; height: 400px;float: left; background: repeating-linear-gradient(-45deg,#5cb8b8,#77eee4 1px,#64c9a2 0,#77eede 2px);}   
+.dis6:hover {cursor:pointer;}
+.dis6 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
+.dis6 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis6 h1:hover{background:rgba(0,0,0,0.3);}
+.dis6 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
 /* 인플루언서 */
 #ai {width: 73.8%; height: 600px;margin:0 13.1% 0; }
