@@ -4,7 +4,7 @@
 *{margin: 0; padding: 0;}
 body{margin: 0; padding: 0;}
 ul,ol,li {list-style: none;}
-a{text-decoration: none; color: #333;}
+a {text-decoration: none; color: #333;}
 
 
 /* 헤더 */
@@ -37,17 +37,17 @@ span:hover {background: rgba(255,255,255,0.8);color: #000;}
 
 .btn6{border:0px solid transparent; -webkit-transition: all 1s cubic-bezier(.5, .24, 0, 1);
           transition: all 1s cubic-bezier(.5, .24, 0, 1);} 
-.btn6:before {content: '';position: absolute;left: 0px;bottom:-270px;z-index:-10;
-                width: 0%;height:332px; border:none solid #ffffff;box-shadow: inset 100px 100px 100px 200px #ffffff; opacity: 0.5;
+.btn6:before {content: '';position: absolute;left: 0px;bottom:-275px;z-index:-10;
+                width: 0%;height:332px;border-radius: 40px; border:none solid #ffffff;box-shadow: inset 100px 100px 100px 200px #ffffff; opacity: 0.5;
                display: block;-webkit-transition: all 1s cubic-bezier(.5, .24, 0, 1);transition: all 1s cubic-bezier(.5, .24, 0, 1)}
-.btn6:hover::before {width:100%;}
+.btn6:hover:before {width:100%;}
 
 /* 디스코버 */
 #disco{width: 100%; height: 800px; display: contents; display: block;}
-.dis1{width: 50%; height: 400px;float: left; background:url(/Img/disco_1.png);}
-.dis1:hover {cursor:pointer;float: left;}
+.dis1{width: 50%; height: 400px;float: left; background:url(/Img/disco_1.png); transition: 1s;}
+.dis1:hover {cursor:pointer;float: left;transform: scale(107%);border-radius: 50px;}
 .dis1 h1 {font-size: 30px; font-weight: 900;padding: 20px 0;margin-top: 80px;margin-left: 50px ;color: #fff;transition: 0.5s;}
-.dis1 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis1 p {margin-top: 20px; font-size: 17px;transition: 1s; font-weight: 500;}
 .dis1 h1:hover{background:rgba(0,0,0,0.3);}
 .dis1 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
@@ -55,60 +55,48 @@ span:hover {background: rgba(255,255,255,0.8);color: #000;}
 .dis2{width: 25%; height: 400px;float: left;background: repeating-linear-gradient(-45deg,#5c96b8,#77c2ee 1px,#64a4c9 0,#77c2ee 2px);}   
 .dis2:hover {cursor:pointer;}
 .dis2 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
-.dis2 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis2 p {margin-top: 20px; font-size: 17px;transition: 1s;font-weight: 500}
 .dis2 h1:hover{background:rgba(0,0,0,0.3);}
 .dis2 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
 
-.dis3{width: 25%; height: 400px;float: left; background: url(/Img/disco_2.jpg)}
-.dis3:hover {cursor:pointer;}
+.dis3{width: 25%; height: 400px;float: left; background: url(/Img/disco_2.jpg);transition: 1s;}
+.dis3:hover {cursor:pointer;float: left;transform: scale(107%);border-radius: 50px;}
 .dis3 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
-.dis3 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis3 p {margin-top: 20px; font-size: 17px;transition: 1s;font-weight: 500}
 .dis3 h1:hover{background:rgba(0,0,0,0.3);}
 .dis3 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
-.dis4{width: 50%; height: 400px;float: left; background-color: rgb(255, 193, 59);float: left;}
-.news{width: 100%}
-.news>li{float: left;width: 33.3%;line-height: 40px;text-align: center;background-color: #64a4c9;}
-.news>li:hover{background-color: #5790b1;}
-.news>li:hover a{color: #ffffff;}
-.news>li>a{color: #fff;}
-.sub{background-color: #78bce4;display: none;}
-.sub>li:hover{background-color: #64c9a2;}
-    /* background: rgba(#fff,#fff,#fff,#fff,0.5);} */
+.dis4{width: 50%; height: 400px;float: left;}
+.news{width: 70%}
+.news>li {float: left;text-align: center;background-color: #f5f5f5;}
+.news>li>a{margin: auto;background-color: #dbdbdb;}
+.sub{background-color: #bdbdbd;display: none;}
 
 
-
-
-.dis5{width: 25%; height: 400px;float: left; background: url(/Img/disco_3.png)}
-.dis5:hover {cursor:pointer;}
-.dis5 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;
-            }
-.dis5 p {margin-top: 20px; font-size: 17px;transition: 1s;}
+.dis5{width: 25%; height: 400px;float: left; background: url(/Img/disco_3.png);transition: 1s;}
+.dis5:hover {cursor:pointer;float: left;transform: scale(107%);border-radius: 50px;}
+.dis5 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
+.dis5 p {margin-top: 20px; font-size: 17px;transition: 1s;font-weight: 500}
 .dis5 h1:hover{background:rgba(0,0,0,0.3);}
 .dis5 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
 
-.dis6{width: 25%; height: 400px;float: left; background: repeating-linear-gradient(-45deg,#5cb8b8,#77eee4 1px,#64c9a2 0,#77eede 2px);}   
+.dis6{width: 25%; height: 400px;float: left; background: repeating-linear-gradient(-45deg,#5cb8b8,#77eee4 1px,#64c9a2 0,#77eede 2px)}   
 .dis6:hover {cursor:pointer;}
 .dis6 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 0.5s;}
 .dis6 p {margin-top: 20px; font-size: 17px;transition: 1s;}
-.dis6 h1:hover{background:rgba(0,0,0,0.3);}
+.dis6 h1:hover{background:rgba(0,0,0,0.3);font-weight: 500}
 .dis6 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;}
 
 /* 인플루언서 */
-#ai {width: 73.8%; height: 600px;margin:0 13.1% 0; }
-.ai h2{text-align: center; font-size: 30px; padding-top: 7%; font-weight: 700;}
-.ai h1{text-align: center; font-size: 50px; color: rgb(0, 0, 0);}
-.ai p{font-size: 23px;font-weight: 900;}
-
-.ai ul{width: 100%;height: 250px;background-color: #fff;padding-top: 3%;
-          padding-left:15%;}
-.ai img{width: 180px; height: 180px; border-radius: 50%; border: solid none;margin-right: 5%; transition: 0.5; position: relative;}
-.ai img:hover{ cursor: pointer; position: relative;overflow: hidden; background-size: cover;}
-
+#in {width: 73.8%; height: 600px;margin:0 13.1% 0; background-color: #5c96b8;}
+.ain {width: 100%; text-align: center;background-color: #d4efff;padding-top: 100px;}
+.ain h1{font-size: 40px; color: #1772da;}
+.in li img{width: 200px;height: 200px; border: solid none; border-radius: 50%;float: left;transition: 1s;}
+.in img:hover{z-index: 10;;background: rgba(0,0,0,0.3);transform: scale(110%);}
 /* 사이트 */
 #sit{width: 100%; height: 80px;background-color: blue;}
 
 /* 컨테이너 */
-#container{width: 100%; height: 250px;background-color:#444;}
+#container{width: 100%; height: 250px;background-color:#353030;}
