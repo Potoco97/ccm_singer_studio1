@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/all/all.min.css" rel="stylesheet">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,18 @@
     <link rel="stylesheet" href="./css/mein.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.tab_menu').click(function () {
+                let index = $(this).index();
+
+                $('.tab_sub').eq(index).show().siblings().hide();
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -25,7 +37,9 @@
                 <li>INFLUENCER</li>
                 <li>SONG</li>
                 <li>TICKETING</li>
-                <li><h4>LOGIN</h4></li>
+                <li>
+                    <h4>LOGIN</h4>
+                </li>
             </ul>
         </nav>
     </header>
@@ -40,20 +54,20 @@
         <div class="slide_text">
             <a href="#" class="btn6">
                 ccm singer studio
-              </a>
+            </a>
             <span class="prev">&lt;</span>
             <span class="next">&gt;</span>
         </div>
     </div>
     <script>
 
-        function prev(){
+        function prev() {
             $('.slide li:last').prependTo('.slide');
             $('.slide').css('margin-left', "-100%");
             $('.slide').stop().animate({ marginLeft: 0 }, 1000);
         }
-    
-        function next(){
+
+        function next() {
             $('.slide').stop().animate({ marginLeft: "-100%" }, 1000, function () {
                 $('.slide li:first').appendTo('.slide');
                 $('.slide').css({ marginLeft: 0 });
@@ -62,10 +76,10 @@
 
         setInterval(next, 5000);
 
-        $('.prev').click(function(){
+        $('.prev').click(function () {
             prev();
         });
-        $('.next').click(function(){
+        $('.next').click(function () {
             next();
         });
     </script>
@@ -77,105 +91,124 @@
                 <p>주님을 사랑하고 함께 찬양을 드리기를 좋아하는 사람들의 공간 <br>
                     찬송을 요즘 대중가요처럼 만들고 누구나 좋아하는 CCM을 만들어 부르겠습니다 <br>
                     누구나 노래를 좋아하고 주님을 사랑한다면 함께 즐기고 행복할 수 있는 공간 <br>
-                    바로 CSS입니다</p> <br><hr></h1><h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
+                    바로 CSS입니다</p> <br>
+                <hr>
+            </h1>
+            <h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
         </div>
 
         <div class="dis2">
             <h1>스튜디오 소개
                 <p>
-                    찬양와 음악이라는 엔진을 가지고 싱어들의 삶의 
+                    찬양와 음악이라는 엔진을 가지고 싱어들의 삶의
                     <br> 흔적을 남기고 끈임없이 주님을 찬양하는 공간 <br>
                     <br><br>
-                    </p> <br><hr></h1><h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
+                </p> <br>
+                <hr>
+            </h1>
+            <h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
         </div>
 
         <div class="dis3">
             <h1>3대 사역
-            <p>
-                예수그리스도께서 하신 3대사역으로 <br> 
-                다음세대를 위한 교육문화사역 <br>
-                어르신들을 위한 복지문화사역 <br>
-                아픈사람들을 위한 회복 사역
-                <br>
-                </p> <br><hr></h1><h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
+                <p>
+                    예수그리스도께서 하신 3대사역으로 <br>
+                    다음세대를 위한 교육문화사역 <br>
+                    어르신들을 위한 복지문화사역 <br>
+                    아픈사람들을 위한 회복 사역
+                    <br>
+                </p> <br>
+                <hr>
+            </h1>
+            <h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
         </div>
 
         <div class="dis4">
-            <ul class="news">
-                <li><a href="#">공지사항1</a>
-                    <ul class="sub">
-                        <li><a href="#">함께 </a></li>
-                        <li><a href="#">함께 </a</li>
-                        <li><a href="#">함께 </a</li>
-                        <li><a href="#">함께 </a</li>
-                        <li><a href="#">함께 찬양</a</li>
-                        <li><a href="#">함께 찬양</a</li>
-                    </ul>
-                </li>
-                <li><a href="#">공지사항2</a>
-                    <ul class="sub">
-                        <li><a href="#">함께 찬양하기</a></li>
-                        <li><a href="#">함께 찬양</a</li>
-                        <li><a href="#">함께 찬셨네</a</li>
-                        <li><a href="#">함께 찬셨네</a</li>
-                        <li><a href="#">함네</a</li>
-                        <li><a href="#">함께 하셨네</a</li>
-                    </ul>
-                </li>
-                <li><a href="#">공지사항3</a>
-                    <ul class="sub">
-                        <li><a href="#">함께 찬양하기</a></li>
-                        <li><a href="#">함께 찬양</a</li>
-                        <li><a href="#">함께 찬셨네</a</li>
-                        <li><a href="#">함께 찬셨네</a</li>
-                        <li><a href="#">함네</a</li>
-                        <li><a href="#">함께 하셨네</a</li>
-                    </ul>
-                </li>
-            </ul>
+            <div id="notice">
+                <ul>
+                    <li class="tab_menu active">공지사항</li>
+                    <li class="tab_menu">올해행사</li>
+                    <li class="tab_menu">사역문의</li>
+                </ul>
+                <div class="tab_list">
+                    <div class="tab_sub"><a href="#"><a href="#">&#183;21기 제자대학 모집! <h2>2025-06-07</h2></a><br>
+                            <a href="#">&#183;양육반 54기 모집 시작!<h2>2025-05-12</h2></a><br>
+                            <a href="#">&#183;다음주 사은회 시작! <h2>2025-04-27</h2></a><br>
+                            <a href="#">&#183;20기 제자대학 졸업 예배<h2>2025-04-27</h2></a><br>
+                            <a href="#">&#183;온세대 토요전도의날 <h2>2025-04-26</h2></a><br>
+                            <a href="#">&#183;봄맞이 교회 대청소 <h2>2025-04-04</h2></a><br>
+                            <a href="#">&#183;부활절 칸타타 테너 모집합니다! <h2>2025-03-30</h2></a><br>
+                            <a href="#">&#183;싱어팀으로 함께할 멤버를 모집합니다! <h2>2025-01-20</h2></a></div>
+                   
+                    <div class="tab_sub"><a href="#">&#183;다음주 사은회 시작! <h2>2025-04-27</h2></a><br>
+                        <a href="#">&#183;양육반 54기 모집 시작!<h2>2025-05-12</h2></a><br>
+                        <a href="#">&#183;부활절 칸타타 테너 모집합니다! <h2>2025-03-30</h2></a><br>
+                        <a href="#">&#183;싱어팀으로 함께할 멤버를 모집합니다! <h2>2025-01-20</h2></a><br>
+                        <a href="#">&#183;21기 제자대학 모집! <h2>2025-06-07</h2></a><br>
+                        <a href="#">&#183;봄맞이 교회 대청소 <h2>2025-04-04</h2></a><br>
+                        <a href="#">&#183;20기 제자대학 졸업 예배<h2>2025-04-27</h2></a></div>
+                    
+                    <div class="tab_sub"><a href="#">&#183;당직팀 사역문의 종료 <h2>2025-02-20</h2></a><br>
+                        <a href="#">&#183;당직팀 사역 모집합니다.<h2>2025-01-30</h2></a><br>
+                        <a href="#">&#183;싱어팀 보컬,베이스 모집합니다. <h2>2025-01-11</h2></a><br>
+                        <a href="#">&#183;함께 영혼구원할 지역전도팀을 모집합니다. <h2>2025-01-11</h2></a><br>
+                        <a href="#">&#183;미디어팀 송출 모집합니다. <h2>2025-01-11</h2></a><br>
+                        <a href="#">&#183;디자인팀 멤버 구합니다.<h2>2025-01-01</h2></a><br></div>
+                </div>
+            </div>
         </div>
 
         <div class="dis5">
             <h1>Nection
                 <p>
-                    청소년들이 다음세대를 위해 <br> 
+                    청소년들이 다음세대를 위해 <br>
                     예배,찬양,기도,전도를 준비하여 <br>
                     오직 주님께 모든 영광을 올려드리는 <br>
                     예배하는 공간
                     <br>
-                    </p> <br><hr></h1><h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
-            
+                </p> <br>
+                <hr>
+            </h1>
+            <h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
+
         </div>
 
         <div class="dis6">
             <h1>미니스트리소개
                 <p>
-                    오직 주 하나님만 높여드리기위한 <br> 
+                    오직 주 하나님만 높여드리기위한 <br>
                     청소년과 청년들의 예배,말씀,기도,찬양 <br>
                     배우고, 가르치고, 나누고, 함께하는 <br>
                     모두를 위한 공간
                     <br>
-                    </p> <br><hr></h1><h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
+                </p> <br>
+                <hr>
+            </h1>
+            <h2>바로가기 <i class="fi fi-br-arrow-right"></i></h2>
         </div>
     </div>
 
     <!-- 인플루언서 -->
-    <div id="in">
-        <div class="ain">
-            <h2>싱어 스튜디오</h2>
-            <h1>CCM SINGER STUDIO</h1>
+<div id="in">
+    <div class="ain">
+        <h2>싱어 스튜디오</h2>
+        <h1>CCM SINGER STUDIO</h1>
+        <div class="inp">
+            <img src="/Img/lnp1.png" alt="#">
+            <p>사진 계시판</p>
+            <img src="/Img/lnp2.png" alt="#">
+            <p>CCM 커버</p>
+            <img src="/Img/lnp4.png" alt="#">
+            <p>CSS 가족</p>
+            <img src="/Img/lnp3.png" alt="#">
+            <p>찾아오는 길</p>
         </div>
-            <ul class="in">
-                <li><img src="/Img/ai1_brgipt_img.PNG" alt=""><i class="fi fi-rr-search"></i></li>
-                <li><img src="/Img/ai1_ccws_img.PNG" alt=""></li>
-                <li><img src="/Img/ai_ysgdd_img.PNG" alt=""></li>
-                <li><img src="/Img/ai_gir_img.PNG" alt=""></li>
-            </ul>
+</div>
 
 
 
-        </div>
     </div>
+</div>
     <!-- 사이트 -->
     <div id="sit">
 
