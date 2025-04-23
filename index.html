@@ -23,13 +23,59 @@
             });
         });
     </script>
+    <script>
+        $(function(){
+            $(".a").click(function(){
+                $(".b").slideToggle();
+            });
+        });
+        $(window).resize(function(){
+            if(window.innerWidth<=1015){
+                $('.b').show();
+            };
+        });
+    </script>
+
+<style>
+@media (max-width:850px){
+    header{width: 100%;height: auto;}
+    header img{width: 100px;}
+    header img:hover{width: 120px;}
+    nav li{font-size: 15px;}
+
+    #slidewrap {height: 550px;}
+    .slide li img {height: 550px;}
+
+    .slide_text a{width: 260px;font-size: 50px;line-height: 70px;}
+    .slide_text a:hover{font-size: 60px;}
+    .btn6:before {height: 250px;bottom:-175px;}
+
+    #disco{height: auto;}
+    .dis1{width: 100%;}
+    .dis1:hover{transform: scale(100%);width: 104%;border-radius: 0%;}
+    .dis2{width:100%;transition: 0.5s;}
+    .dis2:hover{width: 104%;border-radius: 0%;}
+    .dis3{width: 100%;background: url(/Img/disco_2.png);}
+    .dis3:hover{transform: scale(100%);width: 104%;border-radius: 0%;}
+    .dis6{width: 100%;}
+    .dis6:hover{transform: scale(100%);width: 104%;border-radius: 0%;}
+    .dis5{width: 100%;}
+    .dis5:hover{transform: scale(100%);width: 104%;border-radius: 0%;}
+}
+
+@media (max-width:1015px){}
+
+
+@media (min-width:1415px){}
+
+</style>
 </head>
 
 <body>
     <!-- 헤더 -->
     <header>
         <div id="header">
-            <img src="./Img/logo.png" alt="">
+            <img src="./Img/logo.png" alt="#">
         </div>
         <nav>
             <ul>
