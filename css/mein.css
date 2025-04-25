@@ -18,7 +18,7 @@ nav li{width: 16%;float: left;text-align: center;font-size: 20px;transition: 1s;
 nav h4{float: right;text-align: center;transition: 1s;font-size: 20px;}
 nav h4:hover{cursor: pointer; transform: scale(110%);color: red;}
 nav li:hover{cursor: pointer; transform: scale(110%);color: red;}
-
+.hambuger{display: none;}
 
 /* 슬라이더 */
 
@@ -74,7 +74,7 @@ nav li:hover{cursor: pointer; transform: scale(110%);color: red;}
 #notice{width: 100%;margin: 20px;}
 #notice ul{height: 46px;background-color: #eee;width: 70%;}
 #notice li{font-weight: 700;font-size: 22px;float: left; width: 33.3%; height: 39px;text-align: center;cursor: pointer;padding-top: 7px;}
-#notice .tab_list{letter-spacing:3px;line-height: 2;font-size: 17px;float: left;width: 93%;;border-top:2px solid #60b2d3; border-left: 1px
+#notice .tab_list{letter-spacing:3px;line-height: 2;font-size: 17px;float: left;width: 97%;border-top:2px solid #60b2d3; border-left: 1px
                     solid #ddd; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; padding: 10px;}
 .active {background-color: #69a0ce;color:#fff;transition: 0.5s;}
 .tab_sub:not(:first-of-type){display: none; text-decoration: none;}
@@ -124,3 +124,82 @@ nav li:hover{cursor: pointer; transform: scale(110%);color: red;}
 .contain h2{font-size: 16px;opacity: 0.6;font-weight: 500;}
 .contain h4{font-size: 16px;opacity: 0.4;font-weight: 300;transition: 0.5s;}
 .contain h4:hover{cursor: pointer;opacity: 1;}
+
+
+
+@media (max-width:850px) {
+    header {width: 100%;height: auto;padding: 20px;box-sizing: border-box;display: flex;justify-content: space-between;align-items: center;position: absolute;}
+    header img{width: 100px;margin: 0;}
+    nav {position: absolute;top: 70px; left: 0;width: 100%; height: auto; background: rgba(255,255,255,0.3);
+        margin: 0; padding: 10px;box-sizing: border-box;
+        /* display: none; */
+    }
+ 
+    nav li {float: initial; width: 100%;font-size: 18px;text-align:right;}
+    nav h4 {font-size: 18px;float: initial; text-align: right;margin-top: 20px;}
+    nav li:hover{transform: none;color: red;background: rgba(0,0,0,0.3);}
+    nav h4:hover{transform: none;color: red;}
+    .hambuger{display: block;font-size: 30px;transition: 0.5s;}
+    .hambuger:hover{color: #fff;cursor: pointer;}
+    /* nav:hover{padding: 0;} */
+
+
+    /* 슬라이드 */
+    #slidewrap {height: 800px;}
+    .slide li img {height: 800px;}
+    .slide_text a { width: 260px;font-size: 50px;line-height: 70px;}
+    .slide_text a:hover {font-size: 60px;}
+    .btn6:before {height: 250px;bottom: -175px;}
+
+    #disco {height: auto;display: flex;flex-wrap: wrap;}
+    .dis1 {width: 100%;}
+    .dis2 {width: 100%;}
+    .dis3 {width: 100%;}
+    .dis4 {width: 100%;order: 2;}
+    #notice {width: calc(100% - 40px);}
+    .dis6 {width: 100%;}
+    .dis5 {width: 100%;}
+
+    #in {width: 100%; height: auto;}
+    .inp {width: 100%;padding: 50px;flex-wrap: wrap;justify-content: space-evenly;box-sizing: border-box;}
+    .inp a{width: 40%; margin-bottom: 30px;}
+    .inp img{width: 90%;box-sizing: border-box;}
+    .ain h1{font-size: 300%;}
+
+    .sit ul{font-size: 130%;padding-top: 25px;}
+    .sit li:hover{transform: scale(110%);}
+}
+
+@media (min-width:850px) and (max-width:1415px) {
+    header {width: 100%;height: auto;}
+    header img {width: 100px;}
+    header img:hover { width: 120px;}
+    nav {margin-top: 13px;}
+    nav li {font-size: 100%;margin: 5px;}
+
+
+    #slidewrap {height: 800px;}
+    .slide li img {height: 800px;}
+    .slide_text a { width: 400px;height: 150px; font-size: 80px;line-height: 100px;}
+    .slide_text a:hover {font-size: 90px;}
+    .btn6:before {height: 340px;bottom: -175px;}
+
+
+    #disco {height: auto;display: flex;flex-wrap: wrap;}
+    .dis1 {width: 100%;}
+    .dis2 {width: 50%;}
+    .dis3 {width: 50%;}
+    .dis4 {width: 100%;order: 1;}
+    #notice {width: calc(100% - 40px);}
+    .dis6 {width: 50%;}
+    .dis5 {width: 50%;}
+
+    #in {width: 100%; height: auto;}
+    .inp {width: 100%;padding: 50px;flex-wrap: wrap;justify-content: space-evenly;box-sizing: border-box;}
+    .inp a{width: 40%; margin-bottom: 30px;}
+    .inp img{width: 90%;box-sizing: border-box;}
+    .ain h1{font-size: 300%;}
+
+    .sit ul{font-size: 130%;padding-top: 25px;}
+    .sit li:hover{transform: scale(110%);}
+}
