@@ -13,3 +13,19 @@ $(document).ready(function () {
         };
     });
 });
+
+$(document).ready(function () {
+    //슬라이드탭//
+    $(".subslide").click(function () {
+        $("nav").slideToggle();
+    });
+
+
+    $(window).resize(function () {
+        if (window.innerWidth <= 850) {
+            $('nav').hide();
+        } else {
+            $('nav').show();
+        };
+    });
+});
