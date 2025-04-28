@@ -8,34 +8,13 @@
     <title>ccm singer studio</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/mein.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.tab_menu').click(function () {
-                let index = $(this).index();
-
-                $('.tab_sub').eq(index).show().siblings().hide();
-                $(this).addClass("active").siblings().removeClass("active");
-            });
-        });
-    </script>
-    <script>
-        $(function () {
-            $(".hambuger").click(function () {
-                $("nav").slideToggle();
-            });
-        });
-        $(window).resize(function () {
-            if (window.innerWidth <= 850) {
-                $('nav').hide();
-            }else{
-                $('nav').show();
-            };
-        });
-    </script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/hambuger.js"></script>
 
 </head>
 
@@ -73,30 +52,7 @@
             <span class="next">&gt;</span>
         </div>
     </div>
-    <script>
-
-        function prev() {
-            $('.slide li:last').prependTo('.slide');
-            $('.slide').css('margin-left', "-100%");
-            $('.slide').stop().animate({ marginLeft: 0 }, 1000);
-        }
-
-        function next() {
-            $('.slide').stop().animate({ marginLeft: "-100%" }, 1000, function () {
-                $('.slide li:first').appendTo('.slide');
-                $('.slide').css({ marginLeft: 0 });
-            });
-        };
-
-        setInterval(next, 5000);
-
-        $('.prev').click(function () {
-            prev();
-        });
-        $('.next').click(function () {
-            next();
-        });
-    </script>
+    
 
     <!-- 디스코버 -->
     <div id="disco">
@@ -253,6 +209,8 @@
             <h4>ⓒ CCM SINQER STUDIO<br>dnflskfk664@gmail.com</h4>
         </div>
     </div>
+
+    <script src="./js/mainslider.js"></script>
 </body>
 
 </html>

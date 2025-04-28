@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+*{margin: 0; padding: 0;}
+body{margin: 0; padding: 0;}
+ul,ol,li {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+
+
+/* 헤더 */
+
+header {width: 100%;height: 80px;margin: 0 auto; position: absolute; top: 0; left: 0; z-index: 5;background: rgba(255,255,255,0.3);}
+header img{width: 200px; margin: 15px;float: left; transition: 1s;float: left;}
+
+nav{width: 75%;height: 2%;float:right; margin-right: 2%;margin-top: 25px;}
+nav li{width: 16%;float: left;text-align: center;font-size: 20px;transition: 1s;font-weight: 900;}
+nav h4{float: right;text-align: center;transition: 1s;font-size: 20px;}
+nav h4:hover{cursor: pointer; transform: scale(110%);color: red;}
+nav li:hover{cursor: pointer; transform: scale(110%);color: red;}
+.hambuger{display: none;}
+
+
+/* 컨테이너 */
+#container{width: 100%; height: 250px;background-color:#353030}
+.contain {color: #fff;text-align: center;padding-top: 50px;}
+.contain h3{font-size: 15px;opacity: 0.5;font-weight: 300;}
+.contain h2{font-size: 16px;opacity: 0.6;font-weight: 500;}
+.contain h4{font-size: 16px;opacity: 0.4;font-weight: 300;transition: 0.5s;}
+.contain h4:hover{cursor: pointer;opacity: 1;}
+
+@media (max-width:850px) {
+    header {width: 100%;height: auto;padding: 20px;box-sizing: border-box;display: flex;justify-content: space-between;align-items: center;position: absolute;}
+    header img{width: 100px;margin: 0;}
+    nav {position: absolute;top: 70px; left: 0;width: 100%; height: auto; background: rgba(255,255,255,0.3);
+        margin: 0; padding: 10px;box-sizing: border-box;
+        /* display: none; */
+    }
+ 
+    nav li {float: initial; width: 100%;font-size: 18px;text-align:right;}
+    nav h4 {font-size: 18px;float: initial; text-align: right;margin-top: 20px;}
+    nav li:hover{transform: none;color: red;background: rgba(0,0,0,0.3);}
+    nav h4:hover{transform: none;color: red;}
+    .hambuger{display: block;font-size: 30px;transition: 0.5s;}
+    .hambuger:hover{color: #fff;cursor: pointer;}
+    /* nav:hover{padding: 0;} */
+
+}
+
+@media (min-width:850px) and (max-width:1415px) {
+    header {width: 100%;height: auto;}
+    header img {width: 100px;}
+    header img:hover { width: 120px;}
+    nav {margin-top: 13px;}
+    nav li {font-size: 100%;margin: 5px;}
+}
