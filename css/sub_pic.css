@@ -1,23 +1,19 @@
 @charset "utf-8";
 
-/* 헤더 */
-
-header {width: 100%;height: 80px;margin: 0 auto; position: absolute; top: 0; left: 0; z-index: 5;background: #dddddd;}
-header img{width: 200px; margin: 15px;float: left; transition: 1s;float: left;}
-
-nav{width: 75%;height: 2%;float:right; margin-right: 2%;margin-top: 25px;}
-nav li{width: 16%;float: left;text-align: center;font-size: 20px;transition: 1s;font-weight: 900;}
-nav h4{float: right;text-align: center;transition: 1s;font-size: 20px;}
-nav h4:hover{cursor: pointer; transform: scale(110%);color: rgb(255, 0, 0);}
-nav li:hover{cursor: pointer; transform: scale(110%);color: rgb(255, 0, 0);}
-/* .hambuger{display: none;} */
 
 /* 갤러리 */
-.pic {width: 800px;height: 1000px;background:#fff;float:right;position: absolute;}
-.pics {width: 200px;height: 1000px;background:#000000;float:left;position: relative;display: block;}
-.subslide {display: block;font-size: 30px;transition: 0.5s;}
-.subslide:hover {color: #fff;cursor: pointer;}
+.pic {width: 100%;height: 800px;background:#000000;border: none;}
+.pic ul{}
+.pic li img{object-fit:cover;width: 25%;}
+.pic li{object-fit:cover;width: 50%;}
 
+/* 컨테이너 */
+#container{width: 100%; height: 250px;background-color:#353030;float: left;}
+.contain {color: #fff;text-align: center;padding-top: 50px;}
+.contain h3{font-size: 15px;opacity: 0.5;font-weight: 300;}
+.contain h2{font-size: 16px;opacity: 0.6;font-weight: 500;}
+.contain h4{font-size: 16px;opacity: 0.4;font-weight: 300;transition: 0.5s;}
+.contain h4:hover{cursor: pointer;opacity: 1;}
 
 @media (max-width:850px) {
     header {width: 100%;height: auto;padding: 20px;box-sizing: border-box;display: flex;justify-content: space-between;align-items: center;position: absolute;}
@@ -26,8 +22,8 @@ nav li:hover{cursor: pointer; transform: scale(110%);color: rgb(255, 0, 0);}
         margin: 0; padding: 10px;box-sizing: border-box;
         /* display: none; */
     }
-    nav li {float: initial; width: 100%;font-size: 30%;text-align:right;}
-    nav h4 {font-size: 18px;float: initial; text-align: right;margin-top: 20px;}
+    nav li {float: initial; width: 100%;font-size: 40%;text-align:right;}
+    nav h4 {font-size: 22px;float: initial; text-align: right;margin-top: 20px;}
     nav li:hover{transform: none;color: red;background: rgba(0,0,0,0.3);}
     nav h4:hover{transform: none;color: red;}
     .hambuger{display: block;font-size: 30px;transition: 0.5s;}
@@ -40,8 +36,9 @@ nav li:hover{cursor: pointer; transform: scale(110%);color: rgb(255, 0, 0);}
 
     @media (min-width:850px) and (max-width:1415px) {
         header {width: 100%;height: auto;}
-        header img {width: 100px;}
+        header img {width: 13%;}
         header img:hover { width: 120px;}
         nav {margin-top: 13px;}
-        nav li {font-size: 100%;margin: 5px;}
+        nav li {font-size: 120%;margin-top: 1%;}
+        nav h4 {margin-top: 1%;}
     }
