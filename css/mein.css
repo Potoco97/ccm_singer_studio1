@@ -78,15 +78,15 @@
 .dis6:hover .text{background-color: rgba(0,0,0,0.5);transition: 1s;}
 
 /* 인플루언서 */
-#in {width: 100%; height: auto;margin-bottom:200px; }
-.ain {text-align: center;margin-top: 10%;}
+#in {width: 100%; height: auto; }
+.ain {text-align: center;margin-top: 10%;margin-bottom: 30px;}
 .ain h1 {font-size: 300%;color: #5c96b8;}
 .ain h2 {font-size: 150%;color: #7da3b9;}
 .ain p {font-size: 130%; font-weight: 800; background-color: #5c96b8;}
 .inp {width: 100%;display: flex;text-align: center;padding-top: 50px;}
 .inp img{filter:brightness(0.7);width: 60%;box-sizing: border-box;border-radius: 50%;transition: 1s;}
-.inp a{width: 30%;}
-.inp p{font-size: 20px; font-weight: 500;}
+.inp a{width: 30%; margin-bottom: 10%;}
+.inp p{font-size: 20px; font-weight: 500;margin-top: 30px;}
 .inp img:hover{filter:brightness(1);transform: scale(110%);}
 
 
@@ -141,7 +141,7 @@
 
 
     #disco {height: auto;display: flex;flex-wrap: wrap;}
-    .dis1 {width: 100%;}
+    .dis1 {width: 100%; background: url(/Img/disco_1_1.png);}
     .dis2 {width: 50%;}
     .dis3 {width: 50%;}
     .dis4 {width: 100%;order: 1;}
