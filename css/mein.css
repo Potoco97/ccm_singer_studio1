@@ -141,7 +141,7 @@
 
 
     #disco {height: auto;display: flex;flex-wrap: wrap;}
-    .dis1 {width: 100%; background: url(/Img/disco_1_1.png);}
+    .dis1 {width: 100%; background: url(../Img/disco_1_1.png);}
     .dis2 {width: 50%;}
     .dis3 {width: 50%;}
     .dis4 {width: 100%;order: 1;}
