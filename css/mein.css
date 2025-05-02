@@ -29,7 +29,7 @@
 .text{transition: 1s;}
 
 #disco{width: 100%; height: 800px; display: contents; display: block;}
-.dis1{width: 50%; height: 400px;float: left; background:url(/Img/disco_1.png);}
+.dis1{width: 50%; height: 400px;float: left; background:url(../Img/disco_1.png);}
 .dis1 h1 {font-size: 30px; font-weight: 900;padding: 20px 0;margin-top: 80px;margin-left: 50px ;color: #fff;transition: 1s;}
 .dis1 p {margin-top: 20px;padding-bottom: 20px; font-size: 17px;transition: 1s; font-weight: 500;color: #fff;margin-left: 50px;}
 .dis1 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;transition: 1s;}
@@ -43,7 +43,7 @@
 .dis2 h2:hover{cursor: pointer;padding-right: 20px;color: red;}
 .dis2:hover .text{background-color: rgba(0,0,0,0.5);transition: 1s;}
 
-.dis3{width: 25%; height: 400px;float: left; background: url(/Img/disco_2.png);}
+.dis3{width: 25%; height: 400px;float: left; background: url(../Img/disco_2.png);}
 .dis3 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 1s;}
 .dis3 p {margin-top: 20px;padding-bottom: 20px; font-size: 17px;transition: 1s;font-weight: 500;color: #fff;margin-left: 20px;}
 .dis3 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;transition: 1s;}
@@ -63,7 +63,7 @@
 .tab_sub a:hover{color: #1772da; text-decoration: underline;transition: 0.2s;}
 
 
-.dis5{width: 25%; height: 400px;float: left; background: url(/Img/disco_3.png);transition: 1s;}
+.dis5{width: 25%; height: 400px;float: left; background: url(../Img/disco_3.png);transition: 1s;}
 .dis5 h1 {font-size: 30px; font-weight: 900;padding-left: 20px;padding-bottom: 20px;padding-top: 20px;margin-top: 80px;color: #fff;transition: 1s;}
 .dis5 p {margin-top: 20px;padding-bottom: 20px; font-size: 17px;transition: 1s;font-weight: 500;color: #fff;margin-left: 20px;}
 .dis5 h2{font-size: 20px; color:#fff;float: right;padding-right: 40px;transition: 1s;}
