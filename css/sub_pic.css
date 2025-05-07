@@ -4,29 +4,23 @@
 header{position:static;}
 
 /* 갤러리 */
-#gallery{margin-top: 10px;background-color: #000;border-width: 10px; width: 1600px; height: 1200px;display: flex;flex-wrap: wrap;justify-content: center;}
-#boxcan {width: 1500px;height: 900px;display: flex;flex-wrap: wrap; align-items: center;}
-.row{width: 100%;display: flex; flex-wrap: wrap;}
+#gallery{margin-top: 7px;width: auto; height: 1800px;display: flex;justify-content: center;}
+#boxcan {width: 100%;height: 900px;display: flex;flex-wrap: wrap;}
+.row{width:100% ;display: flex; flex-wrap: wrap;}
 
 .left{width: 350px; display: flex;}
 .left .box{width: 100%; height: 600px;}
 
 .right{width: 70%; display: flex; flex-wrap: wrap;height: 300px;}
 .right .box{width: 33.333%;height: 300px;}
-.right .box:nth-of-type(1){width: 66.66%;height: 300px;}
+.right .box:nth-of-type(1){width: 50%;height: 300px;}
+.right .box:nth-of-type(2){width: 50%;height: 300px;}
 .right .box:nth-of-type(4){width: 66.66%;height: 600px;}
 
 .box img{width: 100%;height: 100%;}
 
-.row1 {width: 70%; display: flex; flex-wrap: wrap;height: 300px;}
-.row1 .box{width: 33.333%;height: 300px;}
-.row1 .box:nth-of-type(1){width: 66.66%;height: 300px;}
-
-.row2 {width: 70%; display: flex; flex-wrap: wrap;height: 300px;}
-.row2 .box{width: 33.333%;height: 300px;}
-
-.row3 {width: 70%; display: flex; flex-wrap: wrap;height: 300px;}
-.row3 .box{width: 33.333%;height: 300px;}
+.row1 {width: 100%; display: flex; flex-wrap: wrap;}
+.row1 .box{width: 350px;height: 300px;}
 
 /* 컨테이너 */
 #container{width: 100%; height: 250px;background-color:#353030;}
