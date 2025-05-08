@@ -4,28 +4,32 @@
 header{position:static;}
 
 /* 갤러리 */
-#gallery{margin-top: 7px;width: auto; height: 1800px;display: flex;justify-content: center;}
+#gallery{margin-top: 8px;width: 100%;height: 1800px;margin: 0 auto;display: flex;justify-content: center;}
 #boxcan {width: 100%;height: 900px;display: flex;flex-wrap: wrap;}
 .row{width:100% ;display: flex; flex-wrap: wrap;}
 
-.left{width: 350px; display: flex;}
+.left{width: 30%; display: flex;}
 .left .box{width: 100%; height: 600px;}
+.left :hover{cursor: pointer}
 
-.right{width: 70%; display: flex; flex-wrap: wrap;height: 300px;}
+.right{width: 70%; display: flex; flex-wrap: wrap;height: 300px;text-align: center;}
 .right .box{width: 33.333%;height: 300px;}
+.right :hover{cursor: pointer;}
 .right .box:nth-of-type(1){width: 50%;height: 300px;}
 .right .box:nth-of-type(2){width: 50%;height: 300px;}
 .right .box:nth-of-type(4){width: 66.66%;height: 600px;}
 
+
 .box img{width: 100%;height: 100%;}
 
-.row1 {width: 100%; display: flex; flex-wrap: wrap;}
-.row1 .box{width: 350px;height: 300px;}
+.row1 {width: 100%; display: flex; flex-wrap: wrap; cursor: pointer;}
+.row1 .box{width: 53.5%;height: 300px;}
+.row1 :hover{cursor: pointer;}
 
 /* 컨테이너 */
 #container{width: 100%; height: 250px;background-color:#353030;}
 .contain {color: #fff;text-align: center;padding-top: 50px;}
 .contain h3{font-size: 15px;opacity: 0.5;font-weight: 300;}
 .contain h2{font-size: 16px;opacity: 0.6;font-weight: 500;}
-.contain h4{font-size: 16px;opacity: 0.4;font-weight: 300;transition: 0.5s;}
+.contain h4{font-size: 16px;opacity: 0.4;font-weight: 300;}
 .contain h4:hover{cursor: pointer;opacity: 1;}
